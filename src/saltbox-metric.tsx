@@ -11,11 +11,6 @@ const lifecycles = singleSpaReact({
   domElementGetter: () => document.getElementById("app-container"),
 });
 
-/**
- * Same contract as gateway/core: settingsConfig is added to menuStore by root-config
- * when this module is loaded (service "metric" in discovery). Uses href for links
- * to Grafana (same-origin); path is used for in-app routes in other modules.
- */
 export const saltboxModule = {
   singleSpaLifecycle: lifecycles,
   name: "saltbox-frontend-metric",
@@ -37,15 +32,6 @@ export const saltboxModule = {
         icon: "history",
         href: "/grafana/a/grafana-lokiexplore-app",
       },
-      {
-        key: "test",
-        label: { en: "Test", ru: "Тест" },
-        icon: "history",
-        href: "https://hobbygames.ru/warhammer",
-      },
     ],
-  },
-  init: () => {
-    // Optional init, same as gateway/core; no-op for metric.
   },
 };
