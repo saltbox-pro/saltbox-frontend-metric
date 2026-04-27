@@ -24,7 +24,7 @@ export const saltboxModule = {
         key: "dashboard",
         label: { en: "Dashboard", ru: "Дашборд" },
         icon: "dashboard",
-        href: "/grafana",
+        href: "/grafana/d/salt_box",
       },
       {
         key: "logs",
