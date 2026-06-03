@@ -19,3 +19,6 @@ dist
 .vscode
 *.suo
 .DS_Store
+
+# CI
+/.gitlab-ci-local
